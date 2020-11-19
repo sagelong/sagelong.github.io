@@ -220,7 +220,6 @@ video {
   width: 20rem;
   margin-left: 5rem;
   object-fit: cover;
-  object-position: center;
 }
 .about-image img {
   height: 100%;
