@@ -11,6 +11,7 @@ body {
   margin: 0 auto;
   padding: 0;
   min-height: 100%;
+  background: color white;
 }
 
 *,
@@ -35,13 +36,14 @@ video {
   line-height: 1rem;
   overflow: hidden;
 
-  background-color: black;
+  background-color: rgb(190, 119, 38);
 }
 
 .logo,
 .nav-item {
   white-space: nowrap;
   text-transform: uppercase;
+  padding-bottom: 0.5rem;
 }
 
 .nav-menu {
@@ -79,7 +81,7 @@ video {
 }
 
 .nav-menu a:hover {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
 /* hero header navbar changes */
@@ -129,7 +131,7 @@ video {
 
 .hero-image-box::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -317,11 +319,10 @@ video {
   color: black;
 }
 /* footer nav extra styles */
-.nav-bar .footer-nav {
-  background-color: black;
-}
+
 .footer-logo {
   white-space: nowrap;
+  padding-bottom: 0.5rem;
 }
 
 .footer-social {
@@ -337,10 +338,14 @@ video {
 
 .footer-copyright {
   text-align: center;
-  padding-bottom: 6rem;
+  padding-bottom: 4rem;
 }
 /* add media queries for large screens */
-
+@media (min-width: 200px) {
+  .nav-bar {
+    display: flex;
+  }
+}
 @media (min-width: 600px) {
   .nav-bar {
     line-height: 1.5rem;
