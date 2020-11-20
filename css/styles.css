@@ -61,6 +61,20 @@ video {
   text-align: center;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.nav-dropdown-content {
+  background-color: rgb(190, 119, 38);
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .social-nav-item {
   flex: 1 1 10%;
 }
@@ -225,7 +239,9 @@ video {
   height: 100%;
   object-fit: cover;
 }
-
+.about-image p {
+  color: rgb(190, 119, 38);
+}
 .about-social {
   display: flex;
   justify-content: start;
@@ -239,7 +255,13 @@ video {
 
 /*begin grid gallery styles */
 .gallery-page {
-  padding: 0 1rem 10rem 1rem;
+  padding: 0 1rem 7rem 1rem;
+}
+.digital-section {
+  margin-bottom: 4rem;
+}
+.drawings-section {
+  margin-bottom: 4rem;
 }
 
 .portfolio-gallery {
@@ -303,7 +325,7 @@ video {
   margin: 0 auto;
 }
 .shop-page .text-link a {
-  color: black;
+  color: rgb(190, 119, 38);
 }
 
 .curated-shop {
@@ -315,7 +337,7 @@ video {
   margin-bottom: 0.5rem;
 }
 .shop-item a {
-  color: black;
+  color: rgb(190, 119, 38);
 }
 /* footer nav extra styles */
 
